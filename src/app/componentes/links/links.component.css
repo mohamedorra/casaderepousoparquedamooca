@@ -1,0 +1,99 @@
+
+/* style.css */
+.body1 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #f0f0f0;
+  height: 20%;
+  background-color: greenyellow;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto ;
+  margin-top: 50px;
+
+}
+
+a{
+  text-decoration: none;
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin-right: 5px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  box-shadow: #555;
+
+}
+
+.card svg {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+
+
+}
+
+
+
+
+.card h3{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+
+
+}
+
+.card p, .card a {
+  font-size: 20px;
+  color: #555;
+
+
+}
+
+.card p {
+  text-decoration: none;
+
+}
+
+/* Social Media Icons */
+.card  i {
+  font-size: 18px;
+  margin: 0 5px;
+
+}
+
+.email{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 0 auto;
+}
+
+.ppi{
+  font-weight: 200;
+
+
+}
+
+.trabalhe
+{
+
+    font-weight: bolder;
+
+}
