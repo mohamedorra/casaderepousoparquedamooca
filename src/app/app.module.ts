@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderrComponent } from './componentes/headerr/headerr.component';
 import { Body1Component } from './componentes/QuemSomos/body1.component';
 
-import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { CarouselComponent } from './componentes/depoimentos/carousel.component';
 import { BodyComponent } from './componentes/body/body.component';
 import { AlbumComponent } from './componentes/album/album.component';
 import { LinksComponent } from './componentes/links/links.component';
