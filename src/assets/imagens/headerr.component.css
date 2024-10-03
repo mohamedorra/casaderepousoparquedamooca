@@ -41,6 +41,7 @@
   bottom: 0;
   right: 0;
 
+
 }
 .about .social {
   opacity: 0;
@@ -156,10 +157,12 @@ body {
   color: #9197ae;
   text-transform: uppercase;
   padding: 0 40px;
+
 }
 @media screen and (max-width: 799px) {
   .mainNav {
     padding: 0 20px;
+
   }
 }
 .mainNav__logo img{
@@ -169,6 +172,7 @@ body {
   font-size: 18px;
   border-radius: 50px;
   border: 1px solid;
+
 }
 .mainNav__links {
   display: flex;
@@ -178,7 +182,12 @@ body {
   .mainNav__links {
     display: none;
 
+
   }
+}
+.mainNav__links a{
+  color: #4c5872;
+  text-decoration: none;
 }
 .mainNav__link {
   letter-spacing: 1px;
@@ -194,20 +203,11 @@ body {
   transform: translateY(-5px);
   box-shadow: inset 0px -20px 0px white;
 }
-.mainNav__icon {
-  background-image: url(https://rafaelalucas91.github.io/assets/icons/black/icon-141.svg);
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: none;
 
-
-}
 @media screen and (max-width: 799px) {
   .mainNav__icon {
     display: block;
+
   }
 }
 
@@ -218,10 +218,12 @@ body {
   padding: 0 40px;
   background-image: linear-gradient(to top, #5af25c 0%, #f0f3f7 100%);
 
+
 }
 @media screen and (max-width: 799px) {
   .mainHeading {
     padding: 0 20px;
+
   }
 }
 .mainHeading__content {
@@ -234,7 +236,10 @@ body {
   align-items: center;
   position: relative;
 
+
 }
+
+
 @media screen and (max-width: 799px) {
   .mainHeading__content {
     min-height: 500px;
@@ -263,6 +268,7 @@ body {
   top: 0;
   left: 0;
   animation: line 0.8s 0.6s ease backwards;
+
 }
 @keyframes line {
   0% {
@@ -317,13 +323,16 @@ body {
 }
 .mainHeading__image {
   right: 0;
-  max-width: 600px;
+  max-width: 550px;
   width: 60%;
-  height: 600px;
+  height: 400px;
   transform: translatey(100px);
   position: absolute;
   overflow: hidden;
   animation: image 0.6s 0.2s ease backwards;
+
+
+
 }
 @media screen and (max-width: 799px) {
   .mainHeading__image {
@@ -331,12 +340,20 @@ body {
     width: 60%;
     transform: translatey(80px);
     right: -6%;
+
+
   }
+
 }
 @keyframes video {
   0% {
     opacity: 0;
-    transform: translatey(200px);
+    transform: translatey(300px);
+ 
+
+
+
+
   }
 }
 .mainHeading__image:before, .mainHeading__image:after {
@@ -348,14 +365,20 @@ body {
   background-image: linear-gradient(to top, #06080b 0%, #6ef88e 100%);
   opacity: 1;
   left: 0;
+
+
+
 }
 .mainHeading__image:before {
   animation: imageBefore 1s 0.2s ease backwards;
+
 }
 @keyframes imageBefore {
   0% {
     height: 100%;
     top: 0;
+
+
   }
 }
 .mainHeading__image:after {
@@ -363,11 +386,15 @@ body {
   height: 100%;
   top: 0;
   opacity: 0.2;
+
 }
 .mainHeading__image video {
   width: 100%;
-  height: 350px;
-justify-content:center ;
+  height: 550px;
+
+
+
+
 
 }
 
@@ -384,6 +411,7 @@ justify-content:center ;
   cursor: pointer;
   box-shadow: inset 0px 0px 0px rgba(99, 116, 152, 0.2);
   transition: all 0.4s ease;
+
 }
 .cta:hover {
   border: 1px solid rgba(99, 116, 152, 0.1);

@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/assets/imagens/headerr.component.css">
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+
+
 </head>
+
+
 <body>
 
 
-<script>
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
-</script>
 <div class="about">
   <a class="bg_links social portfolio" href="https://bit.ly/m/Casa-de-Repouso-Parque-da-Mooca?fbclid=PAZXh0bgNhZW0CMTEAAaZFsVNIxMJA-FwrbAi8J9EVUznoz9EpWIAe2M5f48IdHJThFC40PWex0Ps_aem_IQQaSrMC8_b0kvpPbHG-Hg" target="_blank">
      <span class="icon"></span>
@@ -37,24 +41,7 @@
      <a href="mail:casaderepousoparquedamooca613@gmail.com" class="mainNav__link">Gmail</a>
 
   </div>
-  <div class="mainNav__icon">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g data-name="Layer 2" fill="#9197AE">
-           <g data-name="menu-2">
-              <rect
-                 width="24"
-                 height="24"
-                 transform="rotate(180 12 12)"
-                 opacity="0"
-              />
-              <circle cx="4" cy="12" r="1" />
-              <rect x="7" y="11" width="14" height="2" rx=".94" ry=".94" />
-              <rect x="3" y="16" width="18" height="2" rx=".94" ry=".94" />
-              <rect x="3" y="6" width="18" height="2" rx=".94" ry=".94" />
-           </g>
-        </g>
-     </svg>
-  </div>
+
 </nav>
 <header class="mainHeading">
   <div class="mainHeading__content">
@@ -70,7 +57,7 @@
       </article>
 
      <figure class="mainHeading__image">
-        <video src="/assets/imagens/finish.mp4" autoplay controls ></video>
+        <video src="/assets/imagens/finish.mp4" autoplay loop ></video>
      </figure>
   </div>
 </header>
