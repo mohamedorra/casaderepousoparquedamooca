@@ -182,8 +182,9 @@ body {
   overflow: hidden;
   grid-column-end: span 2;
   margin: calc(-1*var(--hl)) 0;
-  transform: scale(0.95);
+  transform: scale(0.99);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+ 
 }
 
 img {
