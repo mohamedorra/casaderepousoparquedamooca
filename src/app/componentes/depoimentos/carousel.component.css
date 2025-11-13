@@ -1,0 +1,263 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Roboto:wght@400;700&display=swap');
+
+/* ===========================
+   Keyframes para Animações
+   =========================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+   Estilos Globais
+   =========================== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
+  color: #333;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #1a1a2e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0074d9;
+}
+
+/* ===========================
+   Área de Scroll (Container)
+   =========================== */
+.container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 1.5rem;
+  /* Aplica a animação de entrada */
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.box {
+  flex: 0 0 70%;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  /* Animação na entrada */
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   Outer e Inner Divs
+   =========================== */
+.outerdiv {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.innerdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.eachdiv {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.eachdiv:hover {
+  /* Ao passar o mouse, aplica o efeito "pulse" */
+  animation: pulse 0.6s ease-in-out;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.eachdiv::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.eachdiv:hover::before {
+  opacity: 0.6;
+}
+
+/* ===========================
+   Cores de Fundo Inovadoras
+   =========================== */
+.div1 {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.div2 {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.div3 {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.div4 {
+  background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+.div5 {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===========================
+   Tipografia e Conteúdo Interno
+   =========================== */
+.eachdiv h3 {
+  font-size: 1.8rem;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+}
+
+.eachdiv p {
+  font-size: 1rem;
+  z-index: 1;
+  position: relative;
+  opacity: 0.85;
+}
+
+/* ===========================
+   Seção de Usuário
+   =========================== */
+.userdetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imgbox img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+}
+
+.detbox .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.detbox .designation {
+  font-size: 1.4rem;
+  color: #090707;
+}
+
+/* ===========================
+   Responsividade
+   =========================== */
+@media (max-width: 1000px) {
+  .box {
+    flex: 0 0 90%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .box {
+    flex: 0 0 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .innerdiv {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}

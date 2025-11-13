@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  margin-bottom: 50px;
+
+}
+.container {
+  display: flex;
+    height: 200px;
+
+
+
+}
+
+.hospedagem {
+  background-image: url(/assets/imagens/hospedagem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 120%;
+
+
+}
+
+.saude{
+  background-image: url(/assets/imagens/saude.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 120%;
+
+
+}
+
+.nutriçao{
+  background-image: url(/assets/imagens/nutriçao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 120%;
+  margin-bottom: 10px;
+
+
+}
+.entretenimento{
+  background-image: url(/assets/imagens/entretenimento.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 120%;
+
+
+}
+
+
+.text {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: 100%;
+  }
+  .image-container {
+      width: 100%;
+
+  }
+}
+
+svg{
+
+height: 100px;
+display: block;
+margin-right: auto ;
+margin-left: auto ;
+margin-top: 30px;
+margin-bottom: 20px;
+
+}
